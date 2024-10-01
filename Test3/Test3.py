@@ -1,3 +1,4 @@
+# Este código calcula el salario neto de un empleado considerando horas, antigüedad, ventas y descuentos.
 # Solicitar datos al usuario
 horas_trabajadas = float(input("Horas trabajadas: "))
 tarifa_por_hora = float(input("Tarifa por hora: "))
@@ -10,7 +11,7 @@ if horas_trabajadas > 40:
     horas_extras = horas_trabajadas - 40
     salario_base += horas_extras * (tarifa_por_hora * 0.5)  # 150% de la tarifa normal
 
-# Bonificación por antigüedad
+# Bonificacion
 bono_antiguedad = 0
 if anios_antiguedad >= 5:
     bono_antiguedad = salario_base * 0.05
@@ -34,8 +35,8 @@ else:
 # Calcular salario neto
 salario_neto = salario_bruto - descuento
 
-# Mostrar resumen
-print("\nResumen del salario:")
+# Resumen
+print("Resumen del salario:")
 print("Salario base: $", salario_base)
 print("Bono por antigüedad: $", bono_antiguedad)
 print("Comisión por ventas: $", comision_ventas)
